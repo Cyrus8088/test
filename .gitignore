@@ -1,0 +1,3 @@
+.env            # Exclude the .env file containing bot token
+__pycache__/    # Exclude Python cache files
+*.pyc           # Exclude Python bytecode files
