@@ -17,10 +17,10 @@ intents.members = True
 bot = commands.Bot(command_prefix="!", intents=intents)
 
 # RSS feed URL
-RSS_FEED_URL = "https://rss.app/feeds/POrToWpG5V8SiDuR.xml"  # Replace with your RSS feed URL
+RSS_FEED_URL = "https://rss.app/feeds/kgvB3KGQAZFI4ylD.xml"  # Replace with your RSS feed URL
 
 # Discord channel ID to post updates
-DISCORD_CHANNEL_ID = 1326098217384935435  # REPLACE THE CHANNEL ID WHEN YOU WANT IT SENT TO THAT SPECIFIC CHANNEL LILBRO
+DISCORD_CHANNEL_ID = 1325135942918344714  # REPLACE THE CHANNEL ID WHEN YOU WANT IT SENT TO THAT SPECIFIC CHANNEL LILBRO
 
 # Track last seen entry to prevent duplicate posts
 last_seen_entry_id = None
@@ -43,7 +43,7 @@ async def fetch_rss_updates():
 
                     title = latest_entry.title
                     link = latest_entry.link
-                    message = f"**New Tweet**: {title}\n{link}"
+                    message = f"@everyone\nNew Tweet: {title}\n{link}"
 
                     # Send message to the Discord channel
                     channel = bot.get_channel(DISCORD_CHANNEL_ID)
